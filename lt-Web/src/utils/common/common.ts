@@ -1,3 +1,8 @@
+
+const avatar:string="http://rzfvim6dg.hn-bkt.clouddn.com/avatar.jpg?e=1692159372&token=1HkpHK3ahL25jsAghWO1ERPaUvhzW9hFmLvXWR6J:sDVue_IQfWzKennI-MGneGez0Gs="
+
+const bgImg:string = "http://rzfvim6dg.hn-bkt.clouddn.com/bg.jpg?e=1692160013&token=1HkpHK3ahL25jsAghWO1ERPaUvhzW9hFmLvXWR6J:AmW6a1kg442VZYhcsmpsFYL6W8I="
+
 // 检测数据类型
 const { toString } = Object.prototype
 
@@ -113,6 +118,9 @@ export const errorMsg = (): void => {
 
 // 成功提示
 export const messageTips = (type: any, title?: string, msg?: string): void => {
+  ElNotification({
+
+  })
   ElNotification({
     title: title,
     message: msg,
