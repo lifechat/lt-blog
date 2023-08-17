@@ -12,14 +12,12 @@ import lombok.Data;
 @ApiModel(description = "测试")
 public class StuVO {
 
-
     @ApiModelProperty(value = "id")
-    private String id;
-
+    private Integer id;
 
     @ApiModelProperty(value = "名字")
-    private String roleName;
+    private String name;
 
     @ApiModelProperty(value = "年龄")
-    private Number age;
+    private Integer age;
 }

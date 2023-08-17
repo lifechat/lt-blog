@@ -2,7 +2,9 @@ package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.lefei.entity.Stu;
+import com.lefei.model.dto.StuDTO;
 import com.lefei.model.vo.StuVO;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -14,5 +16,11 @@ public interface StuMapper extends BaseMapper<Stu> {
      *
      * @return 标签列表
      */
-    List<StuVO>  selectStuList();
+    List<StuVO>  selectStuListVO();
+
+    /**
+     * 根据学生id 查询
+     */
+
+    StuDTO selectStuById(@Param("id") Integer id);
 }

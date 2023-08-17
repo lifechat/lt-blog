@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.lefei.mapper.StuMapper" >
-    <!--  查询某个学生信息 -->
-    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
-        select * from stu where id =  #{id, jdbcType=INTEGER}
+
+
+    <select id="selectStuListVO" resultType="com.lefei.model.vo.StuVO">
+        select id,
+               name,
+               age
+        from t_stu
     </select>
 
-    <select id="selectStuList" resultType="com.lefei.model.vo.StuVO">
-        select * from stu
-    </select>
+
 </mapper>

@@ -10,7 +10,7 @@ import javax.validation.constraints.NotNull;
 /**
  * 用户信息
  *
- * @author ican
+ * @author lifechat
  */
 @Data
 @ApiModel(description = "用户信息")
