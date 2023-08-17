@@ -12,85 +12,54 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * 用户
+ * 留言
  *
  * @author ican
- * @date 2022/11/29 22:09
- **/
+ */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Message {
 
     /**
-     * 用户id
+     * 留言id
      */
     @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 用户昵称
+     * 昵称
      */
     private String nickname;
 
     /**
-     * 用户名
-     */
-    private String username;
-
-    /**
-     * 密码
-     */
-    private String password;
-
-    /**
-     * 用户头像
+     * 头像
      */
     private String avatar;
 
     /**
-     * 个人网站
+     * 留言内容
      */
-    private String webSite;
+    private String messageContent;
 
     /**
-     * 个人介绍
-     */
-    private String intro;
-
-    /**
-     * 邮箱
-     */
-    private String email;
-
-    /**
-     * 登录ip
+     * 用户ip
      */
     private String ipAddress;
 
     /**
-     * 登录地址
+     * 用户地址
      */
     private String ipSource;
 
     /**
-     * 登录方式 (1邮箱 2QQ 3Gitee 4Github)
+     * 是否通过 (0否 1是)
      */
-    private Integer loginType;
+    private Integer isCheck;
 
     /**
-     * 是否禁用 (0否 1是)
-     */
-    private Integer isDisable;
-
-    /**
-     * 登录时间
-     */
-    private LocalDateTime loginTime;
-
-    /**
-     * 创建时间
+     * 留言时间
      */
     @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;

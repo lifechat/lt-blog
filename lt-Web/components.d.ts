@@ -7,11 +7,13 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ElButton: typeof import('element-plus/es')['ElButton']
     ElIcon: typeof import('element-plus/es')['ElIcon']
-    Footer: typeof import('./src/components/Footer/index.vue')['default']
+    Footer: typeof import('./src/components/Layout/Footer/index.vue')['default']
+    Header: typeof import('./src/components/Layout/Header/index.vue')['default']
     Player: typeof import('./src/components/zw-player/player.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SvgIcon: typeof import('./src/components/SvgIcon/index.vue')['default']
+    Waves: typeof import('./src/components/Waves/index.vue')['default']
   }
 }

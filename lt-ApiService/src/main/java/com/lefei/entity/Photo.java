@@ -12,82 +12,41 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * 用户
+ * 照片
  *
  * @author ican
- * @date 2022/11/29 22:09
- **/
+ */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Photo {
 
     /**
-     * 用户id
+     * 照片id
      */
     @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 用户昵称
+     * 相册id
      */
-    private String nickname;
+    private Integer albumId;
 
     /**
-     * 用户名
+     * 照片名
      */
-    private String username;
+    private String photoName;
 
     /**
-     * 密码
+     * 照片描述
      */
-    private String password;
+    private String photoDesc;
 
     /**
-     * 用户头像
+     * 照片链接
      */
-    private String avatar;
-
-    /**
-     * 个人网站
-     */
-    private String webSite;
-
-    /**
-     * 个人介绍
-     */
-    private String intro;
-
-    /**
-     * 邮箱
-     */
-    private String email;
-
-    /**
-     * 登录ip
-     */
-    private String ipAddress;
-
-    /**
-     * 登录地址
-     */
-    private String ipSource;
-
-    /**
-     * 登录方式 (1邮箱 2QQ 3Gitee 4Github)
-     */
-    private Integer loginType;
-
-    /**
-     * 是否禁用 (0否 1是)
-     */
-    private Integer isDisable;
-
-    /**
-     * 登录时间
-     */
-    private LocalDateTime loginTime;
+    private String photoUrl;
 
     /**
      * 创建时间

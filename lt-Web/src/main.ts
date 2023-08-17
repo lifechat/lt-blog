@@ -1,5 +1,6 @@
-import { createApp } from 'vue'
+import "@/assets/fonts/font.css";
 import '@/style/app.scss'
+import { createApp } from 'vue'
 import App from './App.vue'
 import {setupRouter} from "../src/router";
 import ElementPlus from 'element-plus';

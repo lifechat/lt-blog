@@ -12,82 +12,46 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * 用户
+ * 说说
  *
  * @author ican
- * @date 2022/11/29 22:09
- **/
+ */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Talk {
 
     /**
-     * 用户id
+     * 说说id
      */
     @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 用户昵称
+     * 用户id
      */
-    private String nickname;
+    private Integer userId;
 
     /**
-     * 用户名
+     * 说说内容
      */
-    private String username;
+    private String talkContent;
 
     /**
-     * 密码
+     * 说说图片
      */
-    private String password;
+    private String images;
 
     /**
-     * 用户头像
+     * 是否置顶 (0否 1是)
      */
-    private String avatar;
+    private Integer isTop;
 
     /**
-     * 个人网站
+     * 状态 (1公开  2私密)
      */
-    private String webSite;
-
-    /**
-     * 个人介绍
-     */
-    private String intro;
-
-    /**
-     * 邮箱
-     */
-    private String email;
-
-    /**
-     * 登录ip
-     */
-    private String ipAddress;
-
-    /**
-     * 登录地址
-     */
-    private String ipSource;
-
-    /**
-     * 登录方式 (1邮箱 2QQ 3Gitee 4Github)
-     */
-    private Integer loginType;
-
-    /**
-     * 是否禁用 (0否 1是)
-     */
-    private Integer isDisable;
-
-    /**
-     * 登录时间
-     */
-    private LocalDateTime loginTime;
+    private Integer status;
 
     /**
      * 创建时间

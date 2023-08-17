@@ -12,82 +12,50 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * 用户
+ * 文件
  *
  * @author ican
- * @date 2022/11/29 22:09
- **/
+ */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
-
+public class BlogFile {
     /**
-     * 用户id
+     * 文件id
      */
     @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 用户昵称
+     * 文件url
      */
-    private String nickname;
+    private String fileUrl;
 
     /**
-     * 用户名
+     * 文件名
      */
-    private String username;
+    private String fileName;
 
     /**
-     * 密码
+     * 文件大小
      */
-    private String password;
+    private Integer fileSize;
 
     /**
-     * 用户头像
+     * 文件类型
      */
-    private String avatar;
+    private String extendName;
 
     /**
-     * 个人网站
+     * 文件路径
      */
-    private String webSite;
+    private String filePath;
 
     /**
-     * 个人介绍
+     * 是否为目录 (0否 1是)
      */
-    private String intro;
-
-    /**
-     * 邮箱
-     */
-    private String email;
-
-    /**
-     * 登录ip
-     */
-    private String ipAddress;
-
-    /**
-     * 登录地址
-     */
-    private String ipSource;
-
-    /**
-     * 登录方式 (1邮箱 2QQ 3Gitee 4Github)
-     */
-    private Integer loginType;
-
-    /**
-     * 是否禁用 (0否 1是)
-     */
-    private Integer isDisable;
-
-    /**
-     * 登录时间
-     */
-    private LocalDateTime loginTime;
+    private Integer isDir;
 
     /**
      * 创建时间

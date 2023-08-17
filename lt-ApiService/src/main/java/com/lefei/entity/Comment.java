@@ -12,85 +12,62 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * 用户
+ * 评论
  *
- * @author ican
- * @date 2022/11/29 22:09
- **/
+ */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
-
+public class Comment {
     /**
-     * 用户id
+     * 评论id
      */
     @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 用户昵称
+     * 类型 (1文章 2友链 3说说)
      */
-    private String nickname;
+    private Integer commentType;
 
     /**
-     * 用户名
+     * 类型id
      */
-    private String username;
+    private Integer typeId;
 
     /**
-     * 密码
+     * 父评论id
      */
-    private String password;
+    private Integer parentId;
 
     /**
-     * 用户头像
+     * 回复评论id
      */
-    private String avatar;
+    private Integer replyId;
 
     /**
-     * 个人网站
+     * 评论内容
      */
-    private String webSite;
+    private String commentContent;
 
     /**
-     * 个人介绍
+     * 评论用户id
      */
-    private String intro;
+    private Integer fromUid;
 
     /**
-     * 邮箱
+     * 回复用户id
      */
-    private String email;
+    private Integer toUid;
 
     /**
-     * 登录ip
+     * 是否通过 (0否 1是)
      */
-    private String ipAddress;
+    private Integer isCheck;
 
     /**
-     * 登录地址
-     */
-    private String ipSource;
-
-    /**
-     * 登录方式 (1邮箱 2QQ 3Gitee 4Github)
-     */
-    private Integer loginType;
-
-    /**
-     * 是否禁用 (0否 1是)
-     */
-    private Integer isDisable;
-
-    /**
-     * 登录时间
-     */
-    private LocalDateTime loginTime;
-
-    /**
-     * 创建时间
+     * 评论时间
      */
     @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;

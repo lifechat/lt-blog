@@ -12,82 +12,61 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * 用户
+ * 定时任务
  *
  * @author ican
- * @date 2022/11/29 22:09
- **/
+ */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Task {
 
     /**
-     * 用户id
+     * 任务id
      */
     @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 用户昵称
+     * 任务名称
      */
-    private String nickname;
+    private String taskName;
 
     /**
-     * 用户名
+     * 任务组名
      */
-    private String username;
+    private String taskGroup;
 
     /**
-     * 密码
+     * 调用目标
      */
-    private String password;
+    private String invokeTarget;
 
     /**
-     * 用户头像
+     * cron执行表达式
      */
-    private String avatar;
+    private String cronExpression;
 
     /**
-     * 个人网站
+     * 计划执行错误策略 (1立即执行 2执行一次 3放弃执行)
      */
-    private String webSite;
+    private Integer misfirePolicy;
 
     /**
-     * 个人介绍
+     * 是否并发执行 (0否 1是)
      */
-    private String intro;
+    private Integer concurrent;
 
     /**
-     * 邮箱
+     * 任务状态 (0运行 1暂停)
      */
-    private String email;
+    private Integer status;
 
     /**
-     * 登录ip
+     * 任务备注信息
      */
-    private String ipAddress;
-
-    /**
-     * 登录地址
-     */
-    private String ipSource;
-
-    /**
-     * 登录方式 (1邮箱 2QQ 3Gitee 4Github)
-     */
-    private Integer loginType;
-
-    /**
-     * 是否禁用 (0否 1是)
-     */
-    private Integer isDisable;
-
-    /**
-     * 登录时间
-     */
-    private LocalDateTime loginTime;
+    private String remark;
 
     /**
      * 创建时间

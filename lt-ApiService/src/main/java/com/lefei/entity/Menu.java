@@ -12,72 +12,62 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * 用户
+ * 菜单
  *
  * @author ican
- * @date 2022/11/29 22:09
+ * @date 2022/11/29 22:10
  **/
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Menu {
 
     /**
-     * 用户id
+     * 菜单id
      */
     @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 用户昵称
+     * 父菜单id
      */
-    private String nickname;
+    private Integer parentId;
 
     /**
-     * 用户名
+     * 类型（M目录 C菜单 B按钮）
      */
-    private String username;
+    private String menuType;
 
     /**
-     * 密码
+     * 名称
      */
-    private String password;
+    private String menuName;
 
     /**
-     * 用户头像
+     * 路由地址
      */
-    private String avatar;
+    private String path;
 
     /**
-     * 个人网站
+     * 菜单图标
      */
-    private String webSite;
+    private String icon;
 
     /**
-     * 个人介绍
+     * 菜单组件
      */
-    private String intro;
+    private String component;
 
     /**
-     * 邮箱
+     * 权限标识
      */
-    private String email;
+    private String perms;
 
     /**
-     * 登录ip
+     * 是否隐藏 (0否 1是)
      */
-    private String ipAddress;
-
-    /**
-     * 登录地址
-     */
-    private String ipSource;
-
-    /**
-     * 登录方式 (1邮箱 2QQ 3Gitee 4Github)
-     */
-    private Integer loginType;
+    private Integer isHidden;
 
     /**
      * 是否禁用 (0否 1是)
@@ -85,9 +75,9 @@ public class User {
     private Integer isDisable;
 
     /**
-     * 登录时间
+     * 排序
      */
-    private LocalDateTime loginTime;
+    private Integer orderNum;
 
     /**
      * 创建时间

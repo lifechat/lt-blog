@@ -1,37 +1,38 @@
 package com.lefei.entity;
 
-import com.baomidou.mybatisplus.annotation.*;
-
-import java.time.LocalDateTime;
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 /**
- * 用户信息
+ * 聊天记录
  *
- * @author yezhiqiu
- * @date 2021/08/01
- * @since 2020-05-18
- */
+ * @author ican
+ * @date 2023/06/12 10:40
+ **/
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
-@TableName("tb_user_info")
-public class UserInfo {
+@AllArgsConstructor
+public class ChatRecord {
 
     /**
-     * 用户ID
+     * 聊天记录id
      */
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 邮箱号
+     * 用户id
      */
-    private String email;
+    private Integer userId;
 
     /**
      * 用户昵称
@@ -44,30 +45,23 @@ public class UserInfo {
     private String avatar;
 
     /**
-     * 用户简介
+     * 聊天内容
      */
-    private String intro;
+    private String content;
 
     /**
-     * 个人网站
+     * 用户登录ip
      */
-    private String webSite;
+    private String ipAddress;
 
     /**
-     * 是否禁言
+     * ip来源
      */
-    private Integer isDisable;
+    private String ipSource;
 
     /**
      * 创建时间
      */
     @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;
-
-    /**
-     * 修改时间
-     */
-    @TableField(fill = FieldFill.UPDATE)
-    private LocalDateTime updateTime;
-
 }

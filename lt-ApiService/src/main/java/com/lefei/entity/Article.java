@@ -12,85 +12,72 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDateTime;
 
 /**
- * 用户
- *
- * @author ican
- * @date 2022/11/29 22:09
+ * 文章
  **/
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Article {
 
     /**
-     * 用户id
+     * 文章id
      */
     @TableId(type = IdType.AUTO)
     private Integer id;
 
     /**
-     * 用户昵称
+     * 文章作者
      */
-    private String nickname;
+    private Integer userId;
 
     /**
-     * 用户名
+     * 文章分类
      */
-    private String username;
+    private Integer categoryId;
 
     /**
-     * 密码
+     * 文章缩略图
      */
-    private String password;
+    private String articleCover;
 
     /**
-     * 用户头像
+     * 文章标题
      */
-    private String avatar;
+    private String articleTitle;
 
     /**
-     * 个人网站
+     * 文章内容
      */
-    private String webSite;
+    private String articleContent;
 
     /**
-     * 个人介绍
+     * 文章类型 (1原创 2转载 3翻译)
      */
-    private String intro;
+    private Integer articleType;
 
     /**
-     * 邮箱
+     * 是否置顶 (0否 1是)
      */
-    private String email;
+    private Integer isTop;
 
     /**
-     * 登录ip
+     * 是否删除 (0否 1是)
      */
-    private String ipAddress;
+    private Integer isDelete;
 
     /**
-     * 登录地址
+     * 是否推荐 (0否 1是)
      */
-    private String ipSource;
+    private Integer isRecommend;
 
     /**
-     * 登录方式 (1邮箱 2QQ 3Gitee 4Github)
+     * 状态 (1公开 2私密 3草稿)
      */
-    private Integer loginType;
+    private Integer status;
 
     /**
-     * 是否禁用 (0否 1是)
-     */
-    private Integer isDisable;
-
-    /**
-     * 登录时间
-     */
-    private LocalDateTime loginTime;
-
-    /**
-     * 创建时间
+     * 发表时间
      */
     @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createTime;
