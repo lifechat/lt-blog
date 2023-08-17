@@ -1,22 +1,21 @@
 package com.lefei.model.vo;
 
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Builder;
 import lombok.Data;
+
 import java.util.Set;
 
 /**
  * 用户登录信息
  *
- * @author lifechat
  **/
 @Data
 @Builder
 @ApiModel(description = "用户登录信息")
-
 public class UserInfoVO {
+
     /**
      * 用户id
      */
@@ -47,13 +46,11 @@ public class UserInfoVO {
     @ApiModelProperty(value = "用户邮箱")
     private String email;
 
-
     /**
      * 个人网站
      */
     @ApiModelProperty(value = "个人网站")
     private String webSite;
-
 
     /**
      * 个人简介
@@ -66,7 +63,6 @@ public class UserInfoVO {
      */
     @ApiModelProperty(value = "点赞文章集合")
     private Set<Object> articleLikeSet;
-
 
     /**
      * 点赞评论集合

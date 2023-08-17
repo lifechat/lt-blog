@@ -11,10 +11,12 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.1.0",
     "@iconify/vue": "^4.1.1",
+    "@vueuse/core": "^10.3.0",
     "aplayer": "^1.10.1",
     "axios": "^1.4.0",
     "crypto-js": "^4.1.1",
     "dayjs": "^1.11.9",
+    "easy-typer-js": "^2.1.0",
     "element-plus": "^2.3.9",
     "jquery": "^3.7.0",
     "js-cookie": "^3.0.5",

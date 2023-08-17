@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div >
     <transition name="dis_list">
       <div class="list_box" v-if="listIsDis">
         <transition name="music_alert">
@@ -207,7 +207,7 @@ import {
   getHotMusic,
   getSearchSuggest,
   getHotTalk
-} from "./api/music";
+} from "@/api/OtherApi";
 import pan from "./img/pan.png";
 import play from "./img/play.png";
 import pause from "./img/pause.png";
@@ -282,7 +282,7 @@ export default {
   },
   computed: {
     thisMusicList() {
-      return [...this.musicList].splice((this.thisListPage - 1) * 10, 10); //分页
+      return [...this.musicList]
     }
   },
   watch: {

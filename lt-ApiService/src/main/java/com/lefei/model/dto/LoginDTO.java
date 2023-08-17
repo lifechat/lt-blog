@@ -14,6 +14,7 @@ import javax.validation.constraints.Size;
 @Data
 @ApiModel(description = "登录信息")
 public class LoginDTO {
+
     /**
      * 用户名
      */
@@ -24,6 +25,7 @@ public class LoginDTO {
     /**
      * 用户密码
      */
+    @NotBlank(message = "密码不能为空")
     @Size(min = 6, message = "密码不能少于6位")
     @ApiModelProperty(value = "用户密码")
     private String password;

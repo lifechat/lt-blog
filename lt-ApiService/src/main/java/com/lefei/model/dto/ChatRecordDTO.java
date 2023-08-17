@@ -7,8 +7,10 @@ import lombok.Builder;
 import lombok.Data;
 
 import java.util.List;
+
 /**
  * 聊天记录DTO
+ *
  **/
 @Data
 @Builder

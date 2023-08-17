@@ -7,8 +7,6 @@ import lombok.Data;
 /**
  * 查询条件
  *
- * @author ican
- * @date 2022/12/04 21:59
  **/
 @Data
 @ApiModel(description = "查询条件")

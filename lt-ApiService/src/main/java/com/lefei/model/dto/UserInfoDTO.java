@@ -5,16 +5,15 @@ import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 
 /**
  * 用户信息
  *
- * @author lifechat
  */
 @Data
 @ApiModel(description = "用户信息")
 public class UserInfoDTO {
+
     /**
      * 用户昵称
      */
