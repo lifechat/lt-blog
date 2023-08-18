@@ -1,13 +1,13 @@
-package com.ican.service.impl;
+package com.lefei.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.ican.entity.VisitLog;
-import com.ican.mapper.VisitLogMapper;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.PageResult;
-import com.ican.service.VisitLogService;
-import com.ican.utils.PageUtils;
+import com.lefei.entity.VisitLog;
+import com.lefei.mapper.VisitLogMapper;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.PageResult;
+import com.lefei.service.VisitLogService;
+import com.lefei.utils.PageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;

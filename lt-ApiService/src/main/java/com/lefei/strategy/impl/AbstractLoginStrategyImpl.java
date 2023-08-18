@@ -1,26 +1,25 @@
-package com.ican.strategy.impl;
+package com.lefei.strategy.impl;
 
 import cn.dev33.satoken.stp.StpUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.ican.entity.User;
-import com.ican.entity.UserRole;
-import com.ican.mapper.UserMapper;
-import com.ican.mapper.UserRoleMapper;
-import com.ican.model.dto.CodeDTO;
-import com.ican.model.vo.SocialTokenVO;
-import com.ican.model.vo.SocialUserInfoVO;
-import com.ican.strategy.SocialLoginStrategy;
+import com.lefei.entity.User;
+import com.lefei.entity.UserRole;
+import com.lefei.mapper.UserMapper;
+import com.lefei.mapper.UserRoleMapper;
+import com.lefei.model.dto.CodeDTO;
+import com.lefei.model.vo.SocialTokenVO;
+import com.lefei.model.vo.SocialUserInfoVO;
+import com.lefei.strategy.SocialLoginStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
 
-import static com.ican.enums.RoleEnum.USER;
+import static com.lefei.enums.RoleEnum.USER;
 
 /**
  * 抽象登录模板
  *
- * @author ican
  */
 @Service
 public abstract class AbstractLoginStrategyImpl implements SocialLoginStrategy {

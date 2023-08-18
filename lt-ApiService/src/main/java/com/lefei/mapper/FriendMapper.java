@@ -1,9 +1,9 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.Friend;
-import com.ican.model.vo.FriendBackVO;
-import com.ican.model.vo.FriendVO;
+import com.lefei.entity.Friend;
+import com.lefei.model.vo.FriendBackVO;
+import com.lefei.model.vo.FriendVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

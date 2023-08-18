@@ -1,20 +1,19 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.Message;
-import com.ican.model.dto.CheckDTO;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.dto.MessageDTO;
-import com.ican.model.vo.MessageBackVO;
-import com.ican.model.vo.MessageVO;
-import com.ican.model.vo.PageResult;
+import com.lefei.entity.Message;
+import com.lefei.model.dto.CheckDTO;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.dto.MessageDTO;
+import com.lefei.model.vo.MessageBackVO;
+import com.lefei.model.vo.MessageVO;
+import com.lefei.model.vo.PageResult;
 
 import java.util.List;
 
 /**
  * 留言业务接口
  *
- * @author ican
  */
 public interface MessageService extends IService<Message> {
 

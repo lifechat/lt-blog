@@ -1,13 +1,12 @@
-package com.ican.strategy;
+package com.lefei.strategy;
 
-import com.ican.model.vo.ArticleSearchVO;
+import com.lefei.model.vo.ArticleSearchVO;
 
 import java.util.List;
 
 /**
  * 文章搜索策略
  *
- * @author ican
  */
 public interface SearchStrategy {
 

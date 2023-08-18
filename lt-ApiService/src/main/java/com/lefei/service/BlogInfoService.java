@@ -1,7 +1,7 @@
-package com.ican.service;
+package com.lefei.service;
 
-import com.ican.model.vo.BlogBackInfoVO;
-import com.ican.model.vo.BlogInfoVO;
+import com.lefei.model.vo.BlogBackInfoVO;
+import com.lefei.model.vo.BlogInfoVO;
 
 /**
  * 博客业务接口

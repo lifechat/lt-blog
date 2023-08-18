@@ -1,4 +1,4 @@
-package com.lefei.Utils;
+package com.lefei.utils;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;

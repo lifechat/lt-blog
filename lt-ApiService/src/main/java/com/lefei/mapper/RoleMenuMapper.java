@@ -1,7 +1,7 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.RoleMenu;
+import com.lefei.entity.RoleMenu;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -10,8 +10,6 @@ import java.util.List;
 /**
  * 角色菜单 Mapper
  *
- * @author ican
- * @date 2022/12/07 11:16
  **/
 @Repository
 public interface RoleMenuMapper extends BaseMapper<RoleMenu> {

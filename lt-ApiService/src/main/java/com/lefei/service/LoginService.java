@@ -6,8 +6,10 @@ import com.lefei.model.dto.RegisterDTO;
 
 /**
  * 登录业务接口
+ *
  **/
 public interface LoginService {
+
     /**
      * 用户登录
      *

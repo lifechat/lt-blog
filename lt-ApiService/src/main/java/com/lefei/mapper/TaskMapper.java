@@ -1,9 +1,9 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.Task;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.TaskBackVO;
+import com.lefei.entity.Task;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.TaskBackVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -12,7 +12,6 @@ import java.util.List;
 /**
  * 定时任务 Mapper
  *
- * @author ican
  */
 @Repository
 public interface TaskMapper extends BaseMapper<Task> {

@@ -10,7 +10,6 @@ import static com.lefei.enums.StatusCodeEnum.SUCCESS;
 /**
  * 结果返回类
  *
- * @author ican
  */
 @Data
 @ApiModel(description = "结果返回类")

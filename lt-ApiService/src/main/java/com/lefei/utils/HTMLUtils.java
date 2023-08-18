@@ -1,4 +1,4 @@
-package com.lefei.Utils;
+package com.lefei.utils;
 import com.github.houbb.sensitive.word.bs.SensitiveWordBs;
 
 /**

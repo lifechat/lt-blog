@@ -1,4 +1,4 @@
-package com.lefei.Utils;
+package com.lefei.utils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.Consts;
 import org.apache.http.HttpStatus;

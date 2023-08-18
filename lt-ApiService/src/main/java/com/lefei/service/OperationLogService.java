@@ -1,15 +1,14 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.OperationLog;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.OperationLogVO;
-import com.ican.model.vo.PageResult;
+import com.lefei.entity.OperationLog;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.OperationLogVO;
+import com.lefei.model.vo.PageResult;
 
 /**
  * 操作日志业务接口
  *
- * @author ican
  */
 public interface OperationLogService extends IService<OperationLog> {
 

@@ -1,4 +1,5 @@
 package com.lefei.mapper;
+
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.lefei.entity.User;
 import com.lefei.model.dto.ConditionDTO;
@@ -11,8 +12,6 @@ import java.util.List;
 /**
  * 用户 Mapper
  *
- * @author ican
- * @date 2022/12/05 15:28
  **/
 @Repository
 public interface UserMapper extends BaseMapper<User> {

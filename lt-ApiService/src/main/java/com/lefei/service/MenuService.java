@@ -1,20 +1,18 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.Menu;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.dto.MenuDTO;
-import com.ican.model.vo.MenuOption;
-import com.ican.model.vo.MenuTree;
-import com.ican.model.vo.MenuVO;
+import com.lefei.entity.Menu;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.dto.MenuDTO;
+import com.lefei.model.vo.MenuOption;
+import com.lefei.model.vo.MenuTree;
+import com.lefei.model.vo.MenuVO;
 
 import java.util.List;
 
 /**
  * 菜单业务接口
  *
- * @author ican
- * @date 2022/12/05 22:13
  **/
 public interface MenuService extends IService<Menu> {
 

@@ -1,10 +1,10 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.Album;
-import com.ican.model.dto.AlbumDTO;
-import com.ican.model.vo.AlbumBackVO;
-import com.ican.model.vo.AlbumVO;
+import com.lefei.entity.Album;
+import com.lefei.model.dto.AlbumDTO;
+import com.lefei.model.vo.AlbumBackVO;
+import com.lefei.model.vo.AlbumVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -13,7 +13,6 @@ import java.util.List;
 /**
  * 相册 Mapper
  *
- * @author ican
  */
 @Repository
 public interface AlbumMapper extends BaseMapper<Album> {

@@ -12,6 +12,7 @@ import java.util.concurrent.TimeUnit;
  */
 @SuppressWarnings("all")
 public interface RedisService {
+
     /**
      * 设置有效时间
      *
@@ -377,11 +378,13 @@ public interface RedisService {
      * @return 分数
      */
     <T> Double getZsetScore(String key, T value);
+
     /**
      * 获取Zset所有分数
      *
      * @param key 关键
      * @return {@link Map}
      */
-    Map<Object,Double> getZsetAllScore(String key);
+    Map<Object, Double> getZsetAllScore(String key);
+
 }

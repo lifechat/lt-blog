@@ -1,10 +1,10 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.Message;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.MessageBackVO;
-import com.ican.model.vo.MessageVO;
+import com.lefei.entity.Message;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.MessageBackVO;
+import com.lefei.model.vo.MessageVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

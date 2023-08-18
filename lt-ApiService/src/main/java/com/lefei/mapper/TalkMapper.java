@@ -1,10 +1,10 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.Talk;
-import com.ican.model.vo.TalkBackInfoVO;
-import com.ican.model.vo.TalkBackVO;
-import com.ican.model.vo.TalkVO;
+import com.lefei.entity.Talk;
+import com.lefei.model.vo.TalkBackInfoVO;
+import com.lefei.model.vo.TalkBackVO;
+import com.lefei.model.vo.TalkVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

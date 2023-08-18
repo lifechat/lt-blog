@@ -1,6 +1,6 @@
-package com.ican.service.impl;
+package com.lefei.service.impl;
 
-import com.ican.service.RedisService;
+import com.lefei.service.RedisService;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;

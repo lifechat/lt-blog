@@ -1,9 +1,9 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.Article;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.*;
+import com.lefei.entity.Article;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.*;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -12,8 +12,6 @@ import java.util.List;
 /**
  * 文章 Mapper
  *
- * @author ican
- * @date 2022/12/04 22:29
  **/
 @Repository
 public interface ArticleMapper extends BaseMapper<Article> {

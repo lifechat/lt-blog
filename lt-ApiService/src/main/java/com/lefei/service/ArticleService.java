@@ -1,9 +1,9 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.Article;
-import com.ican.model.dto.*;
-import com.ican.model.vo.*;
+import com.lefei.entity.Article;
+import com.lefei.model.dto.*;
+import com.lefei.model.vo.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;

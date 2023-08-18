@@ -1,4 +1,4 @@
-package com.ican.strategy.context;
+package com.lefei.strategy.context;
 
 import com.ican.strategy.UploadStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +8,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.util.Map;
 
-import static com.ican.enums.UploadModeEnum.getStrategy;
+import static com.lefei.enums.UploadModeEnum.getStrategy;
 
 /**
  * 上传策略上下文

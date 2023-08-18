@@ -30,7 +30,7 @@ public class Knife4jConfig {
                 .host("localhost")
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.ican.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.lefei.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

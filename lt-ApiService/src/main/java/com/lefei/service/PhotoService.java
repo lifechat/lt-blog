@@ -1,13 +1,13 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.Photo;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.dto.PhotoDTO;
-import com.ican.model.dto.PhotoInfoDTO;
-import com.ican.model.vo.AlbumBackVO;
-import com.ican.model.vo.PageResult;
-import com.ican.model.vo.PhotoBackVO;
+import com.lefei.entity.Photo;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.dto.PhotoDTO;
+import com.lefei.model.dto.PhotoInfoDTO;
+import com.lefei.model.vo.AlbumBackVO;
+import com.lefei.model.vo.PageResult;
+import com.lefei.model.vo.PhotoBackVO;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
@@ -16,7 +16,6 @@ import java.util.Map;
 /**
  * 照片业务接口
  *
- * @author ican
  */
 public interface PhotoService extends IService<Photo> {
 

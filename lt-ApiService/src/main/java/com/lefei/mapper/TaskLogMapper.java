@@ -1,9 +1,9 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.TaskLog;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.TaskLogVO;
+import com.lefei.entity.TaskLog;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.TaskLogVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -12,7 +12,6 @@ import java.util.List;
 /**
  * 定时任务日志 Mapper
  *
- * @author ican
  */
 @Repository
 public interface TaskLogMapper extends BaseMapper<TaskLog> {

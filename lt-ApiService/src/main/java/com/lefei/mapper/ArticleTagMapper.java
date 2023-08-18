@@ -1,7 +1,7 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.ArticleTag;
+import com.lefei.entity.ArticleTag;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -10,7 +10,6 @@ import java.util.List;
 /**
  * 文章标签 Mapper
  *
- * @author ican
  */
 @Repository
 public interface ArticleTagMapper extends BaseMapper<ArticleTag> {

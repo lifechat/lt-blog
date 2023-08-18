@@ -1,9 +1,9 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.Comment;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.*;
+import com.lefei.entity.Comment;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.*;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -12,7 +12,6 @@ import java.util.List;
 /**
  * 评论Mapper
  *
- * @author ican
  */
 @Repository
 public interface CommentMapper extends BaseMapper<Comment> {

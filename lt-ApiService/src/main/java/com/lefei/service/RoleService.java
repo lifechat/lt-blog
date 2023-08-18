@@ -1,20 +1,18 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.Role;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.dto.RoleDTO;
-import com.ican.model.dto.RoleStatusDTO;
-import com.ican.model.vo.PageResult;
-import com.ican.model.vo.RoleVO;
+import com.lefei.entity.Role;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.dto.RoleDTO;
+import com.lefei.model.dto.RoleStatusDTO;
+import com.lefei.model.vo.PageResult;
+import com.lefei.model.vo.RoleVO;
 
 import java.util.List;
 
 /**
  * 角色业务接口
  *
- * @author ican
- * @date 2022/12/07 09:38
  **/
 public interface RoleService extends IService<Role> {
 

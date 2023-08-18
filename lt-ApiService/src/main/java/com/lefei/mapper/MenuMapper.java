@@ -1,13 +1,13 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.Menu;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.dto.MenuDTO;
-import com.ican.model.vo.MenuOption;
-import com.ican.model.vo.MenuTree;
-import com.ican.model.vo.MenuVO;
-import com.ican.model.vo.UserMenuVO;
+import com.lefei.entity.Menu;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.dto.MenuDTO;
+import com.lefei.model.vo.MenuOption;
+import com.lefei.model.vo.MenuTree;
+import com.lefei.model.vo.MenuVO;
+import com.lefei.model.vo.UserMenuVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

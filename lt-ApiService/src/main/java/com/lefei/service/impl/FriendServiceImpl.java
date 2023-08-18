@@ -1,17 +1,17 @@
-package com.ican.service.impl;
+package com.lefei.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.ican.entity.Friend;
-import com.ican.mapper.FriendMapper;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.dto.FriendDTO;
-import com.ican.model.vo.FriendBackVO;
-import com.ican.model.vo.FriendVO;
-import com.ican.model.vo.PageResult;
-import com.ican.service.FriendService;
+import com.lefei.entity.Friend;
+import com.lefei.mapper.FriendMapper;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.dto.FriendDTO;
+import com.lefei.model.vo.FriendBackVO;
+import com.lefei.model.vo.FriendVO;
+import com.lefei.model.vo.PageResult;
+import com.lefei.service.FriendService;
 import com.ican.utils.BeanCopyUtils;
-import com.ican.utils.PageUtils;
+import com.lefei.utils.PageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
@@ -21,7 +21,6 @@ import java.util.List;
 /**
  * 友链业务接口实现类
  *
- * @author ican
  */
 @Service
 public class FriendServiceImpl extends ServiceImpl<FriendMapper, Friend> implements FriendService {

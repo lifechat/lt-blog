@@ -5,14 +5,30 @@ const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
+            path: "/",
+            name: 'home',
+            component: () => import('@/views/home/index.vue')
+        },
+        {
+            name: "about",
+            path: "/about",
+            component: () => import("@/views/about/index.vue"),
+            meta: {
+              title: "个人简介",
+            },
+        },
+        {
+            name: "friend",
+            path: "/friend",
+            component: () => import("@/views/friend/index.vue"),
+            meta: {
+              title: "友链",
+            },
+        },
+        {
             path: '/:pathMatch(.*)',
             name: 'error404',
             component:() => import('../views/404/index.vue')
-        },
-        {
-            path: "/",
-            name: 'home',
-            component: () => import('../views/home/index.vue')
         },
        
     ],

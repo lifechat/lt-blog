@@ -1,6 +1,6 @@
-package com.ican.service;
+package com.lefei.service;
 
-import com.ican.model.dto.MailDTO;
+import com.lefei.model.dto.MailDTO;
 
 /**
  * 邮件服务接口

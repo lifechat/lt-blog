@@ -1,20 +1,19 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.Task;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.dto.StatusDTO;
-import com.ican.model.dto.TaskDTO;
-import com.ican.model.dto.TaskRunDTO;
-import com.ican.model.vo.PageResult;
-import com.ican.model.vo.TaskBackVO;
+import com.lefei.entity.Task;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.dto.StatusDTO;
+import com.lefei.model.dto.TaskDTO;
+import com.lefei.model.dto.TaskRunDTO;
+import com.lefei.model.vo.PageResult;
+import com.lefei.model.vo.TaskBackVO;
 
 import java.util.List;
 
 /**
  * 定时任务业务接口
  *
- * @author ican
  */
 public interface TaskService extends IService<Task> {
 

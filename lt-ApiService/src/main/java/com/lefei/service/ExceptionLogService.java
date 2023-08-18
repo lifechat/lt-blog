@@ -1,9 +1,9 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.ExceptionLog;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.PageResult;
+import com.lefei.entity.ExceptionLog;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.PageResult;
 
 /**
  * 异常日志业务接口

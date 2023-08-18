@@ -1,10 +1,10 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.Role;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.RoleVO;
-import com.ican.model.vo.UserRoleVO;
+import com.lefei.entity.Role;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.RoleVO;
+import com.lefei.model.vo.UserRoleVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.lefei.Utils;
+package com.lefei.utils;
 
 /**
  * 媒体类型工具类

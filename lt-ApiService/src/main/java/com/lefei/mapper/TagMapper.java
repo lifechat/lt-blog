@@ -1,10 +1,10 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.Tag;
-import com.ican.model.vo.TagBackVO;
-import com.ican.model.vo.TagOptionVO;
-import com.ican.model.vo.TagVO;
+import com.lefei.entity.Tag;
+import com.lefei.model.vo.TagBackVO;
+import com.lefei.model.vo.TagOptionVO;
+import com.lefei.model.vo.TagVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

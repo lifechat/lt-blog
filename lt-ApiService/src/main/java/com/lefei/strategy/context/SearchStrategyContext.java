@@ -1,7 +1,7 @@
-package com.ican.strategy.context;
+package com.lefei.strategy.context;
 
-import com.ican.model.vo.ArticleSearchVO;
-import com.ican.strategy.SearchStrategy;
+import com.lefei.model.vo.ArticleSearchVO;
+import com.lefei.strategy.SearchStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Map;
 
-import static com.ican.enums.SearchModeEnum.getStrategy;
+import static com.lefei.enums.SearchModeEnum.getStrategy;
 
 /**
  * 搜索策略上下文

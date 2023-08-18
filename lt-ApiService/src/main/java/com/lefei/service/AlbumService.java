@@ -1,12 +1,12 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.Album;
-import com.ican.model.dto.AlbumDTO;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.AlbumBackVO;
-import com.ican.model.vo.AlbumVO;
-import com.ican.model.vo.PageResult;
+import com.lefei.entity.Album;
+import com.lefei.model.dto.AlbumDTO;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.AlbumBackVO;
+import com.lefei.model.vo.AlbumVO;
+import com.lefei.model.vo.PageResult;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;

@@ -1,9 +1,9 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.Category;
-import com.ican.model.vo.CategoryBackVO;
-import com.ican.model.vo.CategoryVO;
+import com.lefei.entity.Category;
+import com.lefei.model.vo.CategoryBackVO;
+import com.lefei.model.vo.CategoryVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -12,8 +12,6 @@ import java.util.List;
 /**
  * 分类 Mapper
  *
- * @author ican
- * @date 2022/12/02 17:34
  **/
 @Repository
 public interface CategoryMapper extends BaseMapper<Category> {

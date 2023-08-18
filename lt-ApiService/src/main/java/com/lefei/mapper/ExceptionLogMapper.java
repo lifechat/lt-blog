@@ -1,8 +1,8 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.ExceptionLog;
-import com.ican.model.dto.ConditionDTO;
+import com.lefei.entity.ExceptionLog;
+import com.lefei.model.dto.ConditionDTO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

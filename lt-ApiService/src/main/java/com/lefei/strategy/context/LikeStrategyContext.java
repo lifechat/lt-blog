@@ -1,7 +1,7 @@
-package com.ican.strategy.context;
+package com.lefei.strategy.context;
 
-import com.ican.enums.LikeTypeEnum;
-import com.ican.strategy.LikeStrategy;
+import com.lefei.enums.LikeTypeEnum;
+import com.lefei.strategy.LikeStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

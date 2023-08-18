@@ -1,9 +1,9 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.OperationLog;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.OperationLogVO;
+import com.lefei.entity.OperationLog;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.OperationLogVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 

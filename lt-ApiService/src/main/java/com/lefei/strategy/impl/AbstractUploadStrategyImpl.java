@@ -1,8 +1,8 @@
-package com.ican.strategy.impl;
+package com.lefei.strategy.impl;
 
-import com.ican.exception.ServiceException;
+import com.lefei.exception.ServiceException;
 import com.ican.strategy.UploadStrategy;
-import com.ican.utils.FileUtils;
+import com.lefei.utils.FileUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 

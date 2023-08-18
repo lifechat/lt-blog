@@ -1,8 +1,8 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.BlogFile;
-import com.ican.model.vo.FileVO;
+import com.lefei.entity.BlogFile;
+import com.lefei.model.vo.FileVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -11,7 +11,6 @@ import java.util.List;
 /**
  * 文件Mapper
  *
- * @author ican
  */
 @Repository
 public interface BlogFileMapper extends BaseMapper<BlogFile> {

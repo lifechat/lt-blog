@@ -1,4 +1,4 @@
-package com.lefei.Utils;
+package com.lefei.utils;
 import nl.basjes.parse.useragent.UserAgent;
 import nl.basjes.parse.useragent.UserAgentAnalyzer;
 

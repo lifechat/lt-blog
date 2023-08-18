@@ -5,9 +5,6 @@ import com.lefei.entity.User;
 
 /**
  * 用户业务接口
- *
- * @author lifechat
- * @date 2023/8/17
  **/
 public interface UserInfoService extends IService<User> {
 

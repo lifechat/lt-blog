@@ -5,7 +5,11 @@
         <div class="app-wrapper">
             <Header />
             <main class="main-wrapper">
-              <router-view ></router-view >
+                <router-view v-slot="{ Component, route }">
+                    <keep-alive>
+                      <component :is="Component" :key="route.path" />
+                    </keep-alive>
+                 </router-view>
             </main>
             <Footer />
         </div>  

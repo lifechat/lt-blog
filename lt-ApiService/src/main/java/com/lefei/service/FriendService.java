@@ -1,12 +1,12 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.Friend;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.dto.FriendDTO;
-import com.ican.model.vo.FriendBackVO;
-import com.ican.model.vo.FriendVO;
-import com.ican.model.vo.PageResult;
+import com.lefei.entity.Friend;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.dto.FriendDTO;
+import com.lefei.model.vo.FriendBackVO;
+import com.lefei.model.vo.FriendVO;
+import com.lefei.model.vo.PageResult;
 
 import java.util.List;
 

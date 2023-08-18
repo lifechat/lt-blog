@@ -1,10 +1,10 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.Category;
-import com.ican.model.dto.CategoryDTO;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.*;
+import com.lefei.entity.Category;
+import com.lefei.model.dto.CategoryDTO;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.*;
 
 import java.util.List;
 

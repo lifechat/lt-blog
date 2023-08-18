@@ -1,7 +1,7 @@
-package com.ican.service;
+package com.lefei.service;
 
-import com.ican.entity.Article;
-import com.ican.model.vo.ArticleSearchVO;
+import com.lefei.entity.Article;
+import com.lefei.model.vo.ArticleSearchVO;
 
 /**
  * es文章业务接口

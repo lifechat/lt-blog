@@ -1,4 +1,4 @@
-package com.lefei.Utils;
+package com.lefei.utils;
 
 import com.lefei.exception.ServiceException;
 import org.lionsoul.ip2region.xdb.Searcher;

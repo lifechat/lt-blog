@@ -1,20 +1,20 @@
-package com.ican.strategy.impl;
+package com.lefei.strategy.impl;
 
 import cn.dev33.satoken.stp.StpUtil;
 import cn.hutool.core.lang.Assert;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.ican.entity.Article;
-import com.ican.mapper.ArticleMapper;
-import com.ican.service.RedisService;
-import com.ican.strategy.LikeStrategy;
+import com.lefei.entity.Article;
+import com.lefei.mapper.ArticleMapper;
+import com.lefei.service.RedisService;
+import com.lefei.strategy.LikeStrategy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Objects;
 
-import static com.ican.constant.CommonConstant.TRUE;
-import static com.ican.constant.RedisConstant.ARTICLE_LIKE_COUNT;
-import static com.ican.constant.RedisConstant.USER_ARTICLE_LIKE;
+import static com.lefei.constant.CommonConstant.TRUE;
+import static com.lefei.constant.RedisConstant.ARTICLE_LIKE_COUNT;
+import static com.lefei.constant.RedisConstant.USER_ARTICLE_LIKE;
 
 /**
  * 文章点赞策略

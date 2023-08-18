@@ -1,14 +1,12 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.VisitLog;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.PageResult;
+import com.lefei.entity.VisitLog;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.PageResult;
 
 /**
  * 访问业务接口
- *
- * @author ican
  */
 public interface VisitLogService extends IService<VisitLog> {
 

@@ -1,7 +1,7 @@
-package com.ican.service.impl;
+package com.lefei.service.impl;
 
-import com.ican.model.dto.MailDTO;
-import com.ican.service.EmailService;
+import com.lefei.model.dto.MailDTO;
+import com.lefei.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.mail.SimpleMailMessage;

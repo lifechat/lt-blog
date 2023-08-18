@@ -1,9 +1,9 @@
-package com.ican.mapper;
+package com.lefei.mapper;
 
 import cn.hutool.core.date.DateTime;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.ican.entity.VisitLog;
-import com.ican.model.vo.UserViewVO;
+import com.lefei.entity.VisitLog;
+import com.lefei.model.vo.UserViewVO;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
@@ -12,7 +12,6 @@ import java.util.List;
 /**
  * 访问日志Mapper
  *
- * @author ican
  */
 @Repository
 public interface VisitLogMapper extends BaseMapper<VisitLog> {

@@ -10,8 +10,6 @@ import java.util.List;
 /**
  * 用户后台VO
  *
- * @author ican
- * @date 2022/12/10 10:40
  **/
 @Data
 @ApiModel(description = "用户后台VO")

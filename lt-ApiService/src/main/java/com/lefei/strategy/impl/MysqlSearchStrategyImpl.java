@@ -1,8 +1,8 @@
-package com.ican.strategy.impl;
+package com.lefei.strategy.impl;
 
-import com.ican.mapper.ArticleMapper;
-import com.ican.model.vo.ArticleSearchVO;
-import com.ican.strategy.SearchStrategy;
+import com.lefei.mapper.ArticleMapper;
+import com.lefei.model.vo.ArticleSearchVO;
+import com.lefei.strategy.SearchStrategy;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.ican.constant.ElasticConstant.POST_TAG;
-import static com.ican.constant.ElasticConstant.PRE_TAG;
+import static com.lefei.constant.ElasticConstant.POST_TAG;
+import static com.lefei.constant.ElasticConstant.PRE_TAG;
 
 /**
  * MySQL搜索策略

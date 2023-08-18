@@ -1,10 +1,10 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.TaskLog;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.PageResult;
-import com.ican.model.vo.TaskLogVO;
+import com.lefei.entity.TaskLog;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.PageResult;
+import com.lefei.model.vo.TaskLogVO;
 
 /**
  * 定时任务日志业务接口

@@ -1,4 +1,4 @@
-package com.lefei.Utils;
+package com.lefei.utils;
 import cn.dev33.satoken.secure.SaSecureUtil;
 import org.apache.commons.lang3.StringUtils;
 

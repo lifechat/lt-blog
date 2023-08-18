@@ -1,9 +1,9 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.User;
-import com.ican.model.dto.*;
-import com.ican.model.vo.*;
+import com.lefei.entity.User;
+import com.lefei.model.dto.*;
+import com.lefei.model.vo.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;
@@ -11,8 +11,6 @@ import java.util.List;
 /**
  * 用户业务接口
  *
- * @author ican
- * @date 2022/12/05 15:29
  **/
 public interface UserService extends IService<User> {
 

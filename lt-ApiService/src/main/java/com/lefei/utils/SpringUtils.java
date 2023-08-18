@@ -1,4 +1,4 @@
-package com.lefei.Utils;
+package com.lefei.utils;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.NoSuchBeanDefinitionException;

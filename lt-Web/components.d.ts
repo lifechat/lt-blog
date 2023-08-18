@@ -10,6 +10,7 @@ declare module 'vue' {
     ElIcon: typeof import('element-plus/es')['ElIcon']
     Footer: typeof import('./src/components/Layout/Footer/index.vue')['default']
     Header: typeof import('./src/components/Layout/Header/index.vue')['default']
+    NavBar: typeof import('./src/components/Layout/Header/NavBar.vue')['default']
     Player: typeof import('./src/components/zw-player/player.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

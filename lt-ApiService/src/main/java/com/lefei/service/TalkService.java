@@ -1,13 +1,13 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.Talk;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.dto.TalkDTO;
-import com.ican.model.vo.PageResult;
-import com.ican.model.vo.TalkBackInfoVO;
-import com.ican.model.vo.TalkBackVO;
-import com.ican.model.vo.TalkVO;
+import com.lefei.entity.Talk;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.dto.TalkDTO;
+import com.lefei.model.vo.PageResult;
+import com.lefei.model.vo.TalkBackInfoVO;
+import com.lefei.model.vo.TalkBackVO;
+import com.lefei.model.vo.TalkVO;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.util.List;

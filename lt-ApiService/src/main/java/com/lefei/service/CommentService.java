@@ -1,11 +1,11 @@
-package com.ican.service;
+package com.lefei.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.ican.entity.Comment;
-import com.ican.model.dto.CheckDTO;
-import com.ican.model.dto.CommentDTO;
-import com.ican.model.dto.ConditionDTO;
-import com.ican.model.vo.*;
+import com.lefei.entity.Comment;
+import com.lefei.model.dto.CheckDTO;
+import com.lefei.model.dto.CommentDTO;
+import com.lefei.model.dto.ConditionDTO;
+import com.lefei.model.vo.*;
 
 import java.util.List;
 

@@ -1,9 +1,8 @@
-package com.ican.strategy;
+package com.lefei.strategy;
 
 /**
  * 点赞策略
  *
- * @author ican
  */
 public interface LikeStrategy {
 
