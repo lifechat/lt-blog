@@ -10,7 +10,7 @@ import com.lefei.model.vo.FriendBackVO;
 import com.lefei.model.vo.FriendVO;
 import com.lefei.model.vo.PageResult;
 import com.lefei.service.FriendService;
-import com.ican.utils.BeanCopyUtils;
+import com.lefei.utils.BeanCopyUtils;
 import com.lefei.utils.PageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

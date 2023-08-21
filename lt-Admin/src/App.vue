@@ -1,19 +1,29 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-</script>
+
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
+    <el-config-provider >
+        <router-view  />
+        <!-- <LockScreen v-if="themeConfig.isLockScreen" /> -->
+        <!-- <Setings ref="setingsRef" v-show="setLockScreen" /> -->
+        <!-- <CloseFull v-if="!themeConfig.isLockScreen" /> -->
+    </el-config-provider>
 </template>
+<script setup lang="ts">
+// import {onMounted} from 'vue'
 
+// const HandleLogin =  async () => {
+//   const data = {
+//     username:'test@qq.com',
+//     password:'123456'
+//   }
+//   console.log(res);
+// } 
+
+// onMounted(() => {
+   
+//   HandleLogin()
+// })
+</script>
 <style scoped>
 .logo {
   height: 6em;
