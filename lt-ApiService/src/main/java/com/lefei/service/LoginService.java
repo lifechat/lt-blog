@@ -3,11 +3,14 @@ package com.lefei.service;
 import com.lefei.model.dto.CodeDTO;
 import com.lefei.model.dto.LoginDTO;
 import com.lefei.model.dto.RegisterDTO;
+import org.springframework.stereotype.Service;
 
 /**
  * 登录业务接口
  *
  **/
+
+
 public interface LoginService {
 
     /**
