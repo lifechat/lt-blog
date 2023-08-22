@@ -1,28 +1,33 @@
 <template>
-    <header class="header-wrapper" >
-      <!-- 切换按钮 -->
-      <!-- <Toggle></Toggle> -->
-      <!-- 菜单 -->
-      <NavBar />
-      <!-- 右侧按钮 -->
-      <ul class="right">
-        <li class="item">
-          <svg-icon style="cursor: pointer;"  ></svg-icon>
-        </li>
-        <li class="item">
-          <svg-icon style="cursor: pointer;" icon-class="search" ></svg-icon>
-        </li>
-      </ul>
-    </header>
-  </template>
+  <header class="header-wrapper">
+    <!-- 切换按钮 -->
+    <!-- <Toggle></Toggle> -->
+    <!-- 菜单 -->
+    <NavBar />
+    <!-- 右侧按钮 -->
+    <ul class="right">
+      <li class="item">
+        <svg-icon style="cursor: pointer;"></svg-icon>
+      </li>
+      <li class="item">
+        <svg-icon style="cursor: pointer;" icon-class="search"></svg-icon>
+      </li>
+    </ul>
+  </header>
+  <div class="page-header">
+    <h1 class="page-title">{{ route.meta.title }}</h1>
+    <img class="page-cover" src="https://www.dmoe.cc/random.php" style="max-width: 100%; max-height: 100%;">
+    <Waves></Waves>
+  </div>
+</template>
   
-  <script setup lang="ts">
-  import {defineAsyncComponent} from 'vue'
+<script setup lang="ts">
+import { defineAsyncComponent } from 'vue'
+import { useRoute } from 'vue-router'
+const route = useRoute();
 
-
-
-  // 导入组件
-  const NavBar = defineAsyncComponent(() => import('@/components/Layout/Header/NavBar.vue'))
+// 导入组件
+const NavBar = defineAsyncComponent(() => import('@/components/Layout/Header/NavBar.vue'))
 //   import useStore from "@/store";
 //   import { useDark, useScroll } from "@vueuse/core";
 //   import { useToggle } from '@vueuse/shared';
@@ -47,55 +52,55 @@
 //       fixedClass.value = "";
 //     }
 //   });
-  </script>
+</script>
   
-  <style lang="scss" scoped>
+<style lang="scss" scoped>
+.header-wrapper {
+  position: fixed;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 3.125rem;
+  padding: 0 1rem;
+  text-shadow: 0 0.2rem 0.3rem rgb(0 0 0 / 50%);
+  color: var(--header-text-color);
+  transition: all 0.2s ease-in-out 0s;
+  z-index: 9;
+}
+
+.show {
+  background: var(--nav-bg);
+  box-shadow: 0.1rem 0.1rem 0.2rem var(--grey-9-a1);
+  text-shadow: 0 0 0.625rem var(--grey-9-a1);
+  color: var(--text-color);
+}
+
+.up {
+  transform: translateY(0);
+}
+
+.down {
+  transform: translateY(-100%);
+}
+
+.right {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  .item {
+    padding: 0.625rem 0.5rem;
+
+  }
+}
+
+@media (max-width: 991px) {
   .header-wrapper {
-    position: fixed;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 3.125rem;
-    padding: 0 1rem;
-    text-shadow: 0 0.2rem 0.3rem rgb(0 0 0 / 50%);
-    color: var(--header-text-color);
-    transition: all 0.2s ease-in-out 0s;
-    z-index: 9;
+    padding: 0;
   }
-  
-  .show {
-    background: var(--nav-bg);
-    box-shadow: 0.1rem 0.1rem 0.2rem var(--grey-9-a1);
-    text-shadow: 0 0 0.625rem var(--grey-9-a1);
-    color: var(--text-color);
-  }
-  
-  .up {
-    transform: translateY(0);
-  }
-  
-  .down {
-    transform: translateY(-100%);
-  }
-  
-  .right {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  
-    .item {
-      padding: 0.625rem 0.5rem;
-  
-    }
-  }
-  
-  @media (max-width: 991px) {
-    .header-wrapper {
-      padding: 0;
-    }
-  
-  }
-  </style>
+
+}
+</style>

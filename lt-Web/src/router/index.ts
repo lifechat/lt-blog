@@ -26,6 +26,14 @@ const router = createRouter({
             },
         },
         {
+            name: "message",
+            path: "/message",
+            component: () => import("@/views/message/index.vue"),
+            meta: {
+              title: "留言板",
+            },
+        },
+        {
             path: '/:pathMatch(.*)',
             name: 'error404',
             component:() => import('../views/404/index.vue')

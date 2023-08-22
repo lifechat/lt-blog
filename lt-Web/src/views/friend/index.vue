@@ -1,10 +1,4 @@
 <template>
-    <div class="page-header">
-      <h1 class="page-title">友情链接</h1>
-      <img class="page-cover" src="https://static.ttkwsd.top/config/c8049b9b880411ebb6edd017c2d2eca2.jpg" alt="" />
-      <!-- 波浪 -->
-      <Waves></Waves>
-    </div>
     <div class="bg">
       <div class="page-container">
         <h2>

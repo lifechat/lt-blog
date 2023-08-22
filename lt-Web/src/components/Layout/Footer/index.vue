@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer-wrapper"  >
+    <footer class="footer-wrapper">
         底部信息
       <p>
         © {{ 12 }} -
@@ -22,7 +22,7 @@
   
   <style lang="scss" scoped>
   .footer-wrapper {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     bottom: 0;

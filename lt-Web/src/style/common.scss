@@ -3,6 +3,7 @@
 /* 背景色 */
 .bg {
     background-color: var(--grey-0);
+    padding: 1.5rem 0;
 }
 
 /* 页面布局 */
@@ -52,7 +53,8 @@
 .page-container {
     position: relative;
     width: calc(100% - 0.625rem);
-    margin: 1.5rem auto;
+    // margin: 1.5rem auto;
+    margin: auto;
     padding: 1.75rem 2.25rem;
     border-radius: 0.75rem;
     box-shadow: 0 0 1rem var(--box-bg-shadow);
