@@ -2,7 +2,7 @@
 
 /* 背景色 */
 .bg {
-    background-color: var(--grey-0);
+    // background-color: var(--grey-0);
     padding: 1.5rem 0;
 }
 
@@ -12,7 +12,7 @@
     width: 100%;
     height: 70vh;
     background: var(--color-red) no-repeat center center / cover;
-    z-index: -9;
+    // z-index: -9;
 
     &::after {
         content: '';
@@ -30,7 +30,7 @@
 .page-title {
     @include flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 50vh;
     min-height: 10rem;
@@ -42,9 +42,9 @@
 }
 
 .page-cover {
-    position: fixed;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    // top: 0;
+    // left: 0;
     width: 100%;
     height: 70vh;
     object-fit: cover;
@@ -52,7 +52,7 @@
 
 .page-container {
     position: relative;
-    width: calc(100% - 0.625rem);
+    width: 100vw;
     // margin: 1.5rem auto;
     margin: auto;
     padding: 1.75rem 2.25rem;

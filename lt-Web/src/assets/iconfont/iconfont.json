@@ -1,0 +1,65 @@
+{
+  "id": "4265858",
+  "name": "关于我 - PC + H5",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "自我介绍的官网",
+  "glyphs": [
+    {
+      "icon_id": "5391604",
+      "name": "收货地址",
+      "font_class": "shouhuodizhi",
+      "unicode": "e710",
+      "unicode_decimal": 59152
+    },
+    {
+      "icon_id": "5391608",
+      "name": "邮箱",
+      "font_class": "youxiang1",
+      "unicode": "e711",
+      "unicode_decimal": 59153
+    },
+    {
+      "icon_id": "5393529",
+      "name": "跟多",
+      "font_class": "genduo",
+      "unicode": "e719",
+      "unicode_decimal": 59161
+    },
+    {
+      "icon_id": "5405556",
+      "name": "qq",
+      "font_class": "qq",
+      "unicode": "e733",
+      "unicode_decimal": 59187
+    },
+    {
+      "icon_id": "5405557",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e734",
+      "unicode_decimal": 59188
+    },
+    {
+      "icon_id": "5405935",
+      "name": "支付宝",
+      "font_class": "zhifubao",
+      "unicode": "e735",
+      "unicode_decimal": 59189
+    },
+    {
+      "icon_id": "5586000",
+      "name": "电话",
+      "font_class": "dianhua1",
+      "unicode": "e739",
+      "unicode_decimal": 59193
+    },
+    {
+      "icon_id": "6894199",
+      "name": "手机号",
+      "font_class": "shoujihao",
+      "unicode": "e76d",
+      "unicode_decimal": 59245
+    }
+  ]
+}

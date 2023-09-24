@@ -26,6 +26,14 @@ const router = createRouter({
             },
         },
         {
+            name: "contact",
+            path: "/contact",
+            component: () => import("@/views/contact/index.vue"),
+            meta: {
+              title: "联系我",
+            },
+        },
+        {
             name: "message",
             path: "/message",
             component: () => import("@/views/message/index.vue"),
